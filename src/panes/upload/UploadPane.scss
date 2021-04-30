@@ -1,0 +1,105 @@
+// TODO: Lift into styles module
+$colors: (
+  black: #231f20,
+  darkGold: #574f3a,
+  blue: #2354a1,
+  darkBlue: #0e2140,
+  purple: #5d51a5,
+  darkPurple: #332f62,
+  lightGray: #e6e6e6,
+  darkGray: #626262,
+  primary: #137cbd,
+);
+
+.terminologyManager__uploadPane {
+  height: 100%;
+  width: 100%;
+
+  &__dropzone {
+    height: 100%;
+    width: 100%;
+
+    border: 2px dashed map-get($colors, darkGray);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--active {
+      height: 100%;
+      width: 100%;
+
+      border: 2px dashed map-get($colors, primary);
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__text,
+    &__text--active {
+      margin-bottom: 15px;
+
+      &--active {
+        color: map-get($colors, primary);
+      }
+    }
+
+    &__icon {
+      color: map-get($colors, darkGray);
+
+      &--active {
+        color: map-get($colors, primary);
+      }
+    }
+
+    &__pre {
+      font-family: monospace;
+      font-weight: bold;
+    }
+  }
+
+  &__spinner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+// .dropArea,
+// .dropArea--active {
+// //   height: 150px;
+//   border: 2px dashed map-get($colors, darkGray);
+//   border-radius: 5px;
+//   margin-bottom: 10px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+
+//   &--active {
+//     border: 2px dashed map-get($colors, primary);
+//   }
+
+//   &__text,
+//   &__text--active {
+//     margin-bottom: 15px;
+
+//     &--active {
+//       color: map-get($colors, primary);
+//     }
+//   }
+
+//   &__icon {
+//     color: map-get($colors, darkGray);
+
+//     &--active {
+//       color: map-get($colors, primary);
+//     }
+//   }
+// }

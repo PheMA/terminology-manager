@@ -1,0 +1,19 @@
+{
+  "name": "@phema/terminology-manager",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "@blueprintjs/core": "^3.29.0",
+    "@blueprintjs/icons": "^3.19.0",
+    "@phema/workbench-common": "^1.0.0",
+    "jszip": "^3.5.0",
+    "react": "^16.13.1",
+    "react-copy-to-clipboard": "^5.0.2",
+    "react-dropzone": "^v10.1.4",
+    "use-debounce": "^3.4.3"
+  },
+  "devDependencies": {
+    "@ahryman40k/ts-fhir-types": "^4.0.32"
+  }
+}
